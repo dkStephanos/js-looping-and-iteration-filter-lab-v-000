@@ -9,3 +9,14 @@ function findMatching(drivers, string) {
   }
   return collection
 }
+
+function fuzzyMatch(drivers, string) {
+  const collection = [];
+
+  for(const driver of drivers) {
+    if (driver.startsWith(string)) {
+      collection.push(driver)
+    }
+  }
+  return collection
+}
