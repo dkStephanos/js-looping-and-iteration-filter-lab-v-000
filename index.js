@@ -20,3 +20,14 @@ function fuzzyMatch(drivers, string) {
   }
   return collection
 }
+
+function matchName(drivers, string) {
+  const collection = [];
+
+  for(const driver of drivers) {
+    if (driver.name === string {
+      collection.push(driver)
+    }
+  }
+  return collection
+}
