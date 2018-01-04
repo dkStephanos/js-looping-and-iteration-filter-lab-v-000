@@ -3,7 +3,7 @@ function findMatching(drivers, string) {
   const collection = [];
 
   for(const driver of drivers) {
-    if (driver == string) {
+    if (driver.toUpperCase() === string.toUpperCase()) {
       collection.push(driver)
     }
   }
